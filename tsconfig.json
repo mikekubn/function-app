@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "strictNullChecks": true,
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "jsx": "preserve",
+      "module": "esnext",
+      "esModuleInterop": true,
+      "target": "es2016",
+      "lib": [
+        "es2015",
+        "es2017",
+        "esnext",
+        "dom"
+      ],
+      "removeComments": true,
+      "allowJs": true,
+      "noEmit": true,
+      "baseUrl": "./",
+      "resolveJsonModule": true,
+    },
+    "include": [
+      "./src/**/*",
+      "**/*.ts", 
+      "**/*.config.js",
+    ],
+  }
+  
