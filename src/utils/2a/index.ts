@@ -1,6 +1,7 @@
 import { articles, authors, teams } from './_mock_';
 
-const getTeamArticlesDescription = (teamId) => {
+const getTeamArticlesDescription = (teamId: number): string | null => {
+
   const authorsInTeam = teams.find((item) => item.id === teamId)?.members
     .map((member) => 
       authors.filter((author) => author.id === member))
@@ -28,6 +29,10 @@ const getTeamArticlesDescription = (teamId) => {
   });
 
   const withoutCommas = print?.join('');
+
+  if (withoutCommas === undefined) {
+    return null;
+  }
 
   return withoutCommas;
 };
