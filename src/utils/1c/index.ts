@@ -1,3 +1,3 @@
-const unique = <T>(arr: T[]) => [...new Set(arr)];
-    
+const unique = <T>(arr: T[]): T[] => [...new Set(arr)];
+
 export { unique };
